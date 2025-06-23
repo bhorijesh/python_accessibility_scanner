@@ -62,6 +62,7 @@ async def inject_axe_and_run(page, url):
             "url": url,
             "summary": {
                 "violationsFound": len(result["violations"]),
+                "passes": len(result["passes"]),
                 "incomplete": len(result["incomplete"]),
                 "inapplicable": len(result["inapplicable"]),
                 "score": round(100 - (len(result["violations"]) / max(1, (len(result["violations"]) + len(result["incomplete"]))) * 100))
