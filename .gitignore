@@ -1,0 +1,9 @@
+/venv/
+/__pycache__/
+*.pyc
+# Ignore all .json files (including in subdirectories)
+*.json
+**/*.json
+
+# Ignore hidden JSON files (like .config.json)
+.*.json
